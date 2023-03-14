@@ -8,5 +8,5 @@
 * [Technical Writing](https://intranet.alxswe.com/rltoken/wYrZr3t3DeAE8PpYHYWGiw)
 
 **TASKS**
-* [Available On Request](https://drive.google.com/drive/folders/1ZhyZbTVElq69Qr9JbGxaPZzAigooOqJR7)
+* [Available On Request](http://bit.ly/3ZOUwuz)
 
