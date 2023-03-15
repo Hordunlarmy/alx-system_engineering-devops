@@ -13,7 +13,7 @@
 **TASKS**
 * [Available On Request](https://drive.google.com/drive/folders/1dUSZ28AD_ULtx0hqmxcJ9PbhqqoNNo92)
 
-*MATERIALTHAT HELPED WITH TASK 19*
+***MATERIAL THAT HELPED WITH TASK 19***
 * [Magic File Explained](https://youtu.be/fVOd3Dxifms)
 * [Reddit Issue](https://www.reddit.com/r/bash/comments/xq5ur4/creating_a_magic_file/)
 
