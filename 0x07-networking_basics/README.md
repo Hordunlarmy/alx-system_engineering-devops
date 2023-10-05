@@ -1,3 +1,5 @@
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/vwPd32o.jpg"> <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/vwPd32o.jpg"> <img alt="Networking OSI model layers" src="https://i.imgur.com/vwPd32o.jpg"> </picture>
+
 ## RESOURCES
 
 * [OSI model](https://en.m.wikipedia.org/wiki/OSI_model)
