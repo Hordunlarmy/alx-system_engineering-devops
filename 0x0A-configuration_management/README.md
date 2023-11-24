@@ -1,1 +1,1 @@
-<picture> <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/U9XgQeE.png"> <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/U9XgQeE.png"> <img alt="README image" src="https://i.imgur.com/U9XgQeE.png"> </picture>
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/XL4C6Zf.gif"> <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/XL4C6Zf.gif"> <img alt="README image" src="https://i.imgur.com/XL4C6Zf.gif"> </picture>
