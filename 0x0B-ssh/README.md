@@ -1,0 +1,1 @@
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/ElXhy3F.jpg"> <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/ElXhy3F.jpg"> <img alt="README image" src="https://i.imgur.com/ElXhy3F.jpg"> </picture>
