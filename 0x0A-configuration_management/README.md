@@ -1,4 +1,4 @@
-<picture> <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/GxweDzp?r.jpg"> <source media="(prefers-color-scheme: light)" srcset="https://imgur.com/GxweDzp?r.jpg"> <img alt="README image" src="https://imgur.com/GxweDzp?r.jpg"> </picture>
+<picture> <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/GxweDzp.jpg"> <source media="(prefers-color-scheme: light)" srcset="https://imgur.com/GxweDzp.jpg"> <img alt="README image" src="https://imgur.com/GxweDzp.jpg"> </picture>
 
 ## RESOURCES
 
