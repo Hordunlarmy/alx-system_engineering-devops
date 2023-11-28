@@ -17,17 +17,15 @@ exec {'install':
 exec {'Hello':
   command  => 'echo "Hello World!" | sudo tee /var/www/html/index.html',
   provider => shell,
-  require => Exec['nginx'], # Fix: Added closing quote
 }
 
-exec {'sed -i "s/listen 80 default_server;/listen 80 default_server;\\n\\tlocation \/redirect_me {\\n\\t\\treturn 301 https:\/\/blog.ehoneahobed.com\/;\\n\\t}/" /etc/nginx/sites-available/default':
+exec {'redirect':
+  command => "sed -i 's/server_name _;/server_name _;\\n\\trewrite \\/redirect_me https:\\/\\/www.youtube.com\\/watch\\?v=QH2-TGUlwu4 permanent;/' /etc/nginx/sites-enabled/default",
   provider => shell,
-  require => Exec['nginx'],
 }
 
 exec {'run':
   command  => 'service nginx restart',
   provider => shell,
-  require => Exec['nginx'],
 }
 
