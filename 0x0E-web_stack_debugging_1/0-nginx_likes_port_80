@@ -2,4 +2,6 @@
 # Fix nginx port 80 bug
 apt-get -y update
 apt install -y nginx
+apt install -y ufw
+ufw allow 'Nginx HTTP'
 sudo service nginx restart
