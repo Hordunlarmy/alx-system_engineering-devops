@@ -8,10 +8,14 @@ config () {
 
 if [ "$#" == 1 ]
 then
-  dns_config "$1" "www"
-  dns_config "$1" "lb-01"
-  dns_config "$1" "web-01"
-  dns_config "$1" "web-02"
+
+    subdomains=("www" "lb-01" "web-01" "web-02")
+
+  for subdomain in "${subdomains[@]}"
+  do
+    config "$1" "$subdomain"
+  done
+
 elif [ "$#" == 2 ]
 then
   config "$1" "$2"
