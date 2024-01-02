@@ -11,7 +11,7 @@ if __name__ == "__main__":
     url = f"https://jsonplaceholder.typicode.com/users/{sys.argv[1]}/"
 
     response = requests.get(url)
-    employee_name = response.json().get("name")
+    username = response.json().get("username")
 
     response = requests.get(url + "todos")
     employee_todos = response.json()
@@ -19,6 +19,6 @@ if __name__ == "__main__":
     with open(f'{sys.argv[1]}.csv', 'w') as file:
         for task in employee_todos:
             file.write('"{}","{}","{}","{}"\n'
-                       .format(sys.argv[1], employee_name,
+                       .format(sys.argv[1], username,
                                task.get('completed'),
                                task.get('title')))
