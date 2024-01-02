@@ -13,16 +13,17 @@ if __name__ == "__main__":
 
     response = requests.get(url)
     username = response.json().get("username")
+    user_id = sys.argv[1]
 
     response = requests.get(url + "todos")
     employee_todos = response.json()
 
-    dictionary = {sys.argv[1]: []}
+    dic = {user_id: []}
     for task in employee_todos:
-        dictionary[sys.argv[1]].append({
+        dic[user_id].append({
             "task": task.get('title'),
             "completed": task.get('completed'),
             "username": username
         })
-    with open(f'{sys.argv[1]}.json', 'w') as file:
-        json.dump(dictionary, file)
+    with open(f'{user_id}.json', 'w') as file:
+        json.dump(dic, file)
