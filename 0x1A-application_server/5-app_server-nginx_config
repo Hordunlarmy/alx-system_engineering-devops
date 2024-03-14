@@ -5,10 +5,7 @@ server {
 
     add_header X-Served-By $hostname;
     rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
-
-    location /hbnb_static/ {
-        alias /data/web_static/current/;
-    }
+    root /home/ubuntu/AirBnB_clone_v4/web_dynamic;
 
     location / {
         proxy_pass http://127.0.0.1:5003/2-hbnb;
