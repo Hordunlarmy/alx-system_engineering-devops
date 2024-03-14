@@ -10,8 +10,13 @@ server {
         alias /data/web_static/current/;
     }
 
-    location / {
-        include proxy_params;
-        proxy_pass http://unix:/home/ubuntu/AirBnB_clone_v2/web_flask/hello_world.sock;
+    location /airbnb-onepage/ {
+        alias ~/AirBnB_clone_v2/;
+        proxy_pass http://0.0.0.0:5000;
     }
 }
+
+# location / {
+# include proxy_params;
+# proxy_pass http://unix:/home/ubuntu/AirBnB_clone_v2/web_flask/hello_world.sock;}
+# }
