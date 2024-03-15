@@ -1,13 +1,3 @@
-#!/bin/bash
-
-# Get the process IDs of Gunicorn instances
-pids=$(ps auxf | grep gunicorn | grep -v grep | awk '{print $2}')
-
-# Loop through each PID and gracefully reload Gunicorn
-for pid in $pids; do
-    echo "Reloading Gunicorn with PID: $pid"
-    kill -HUP $pid
-done
-
-echo "Gunicorn reloaded gracefully."
-
+#!/usr/bin/env bash
+# Kill gunicorn worker processe gracefully, with no downtime
+pkill -HUP gunicorn
