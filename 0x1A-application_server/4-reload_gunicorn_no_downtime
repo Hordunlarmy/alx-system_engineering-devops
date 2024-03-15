@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if Gunicorn master process is running
+if pgrep -x "gunicorn" > /dev/null; then
+    # Send the HUP signal to the Gunicorn master process
+    sudo kill -HUP $(pgrep -x "gunicorn")
+    echo "Gunicorn is reloading gracefully."
+else
+    echo "Gunicorn is not running."
+fi
+
