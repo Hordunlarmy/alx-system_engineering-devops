@@ -1,11 +1,13 @@
 #!/bin/bash
 
-# Check if Gunicorn master process is running
-if pgrep -x "gunicorn" > /dev/null; then
-    # Send the HUP signal to the Gunicorn master process
-    sudo kill -HUP $(pgrep -x "gunicorn")
-    echo "Gunicorn is reloading gracefully."
-else
-    echo "Gunicorn is not running."
-fi
+# Get the process IDs of Gunicorn instances
+pids=$(ps auxf | grep gunicorn | grep -v grep | awk '{print $2}')
+
+# Loop through each PID and gracefully reload Gunicorn
+for pid in $pids; do
+    echo "Reloading Gunicorn with PID: $pid"
+    kill -HUP $pid
+done
+
+echo "Gunicorn reloaded gracefully."
 
